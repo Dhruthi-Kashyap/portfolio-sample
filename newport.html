@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruthi M Kashyap Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFF0D1; 
+            color: #3B3030; 
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png'); /* Adds a subtle texture */
+        }
+
+        header {
+            background-color: #664343; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #664343, #3B3030);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #3B3030; 
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFF0D1; 
+        }
+
+        nav::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #664343, #3B3030);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .divider {
+            height: 4px;
+            background: linear-gradient(to right, #664343, #3B3030);
+            margin: 30px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            font-size: 2em;
+            color: #3B3030;
+        }
+
+        .card {
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.05);
+            transform: rotate(45deg);
+            border-radius: 50%;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #795757; 
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3B3030; 
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+        }
+
+        .profile-pic {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-pic img {
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            border: 3px solid #664343; 
+        }
+
+        footer {
+            background-color: #3B3030; 
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #664343, #3B3030);
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .slide-in {
+            animation: slideIn 1.5s ease-in forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (min-width: 600px) {
+            .card {
+                display: inline-block;
+                width: calc(33% - 40px);
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 599px) {
+            .card {
+                width: calc(100% - 40px);
+            }
+        }
+
+        .icon-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .icon-text img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .icon-text i {
+            color: #3B3030; /
+        }
+    </style>
+</head>
+<body>
+
+<header class="fade-in">
+    <h1>Dhruthi M Kashyap</h1>
+    <p>Web Developer | Student</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#currently-studying">Currently Studying</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="divider"></div>
+
+<div class="container">
+    <section id="about" class="text-center">
+        <h2 class="slide-in">About Me</h2>
+        <div class="profile-pic">
+            <img src="C:\Users\Admin\OneDrive\Desktop\personal\img.jpg" alt="Dhruthi M Kashyap">
+        </div>
+        <p class="fade-in">Hello, I'm Dhruthi M Kashyap, a <strong>student</strong> currently pursuing my degree in <strong>Information Science and Engineering</strong> from <strong>Visvesvaraya Technological University</strong>. I have a decent foundation in technologies like <strong>HTML, CSS, JavaScript, and Node.js</strong>, and I am actively expanding my knowledge on <strong>MERN stack</strong>.</p>
+        
+        <p class="fade-in">My passion lies in building a website or designing a software solution, as I prepare for placements, looking to apply my problem-solving skills in a professional setting.</p>
+    
+        <p class="fade-in">In addition to my technical pursuits, I have a background in <strong>classical music</strong></p>
+    
+        <p class="fade-in">I am currently working on projects that allow me to apply my skills. My goal is to develop software that not only functions well but also offers an intuitive user experience.</p>
+    
+        <p class="fade-in">If you're interested in collaborating or discussing anything tech-related, feel free to reach out!</p>
+        <div class="icon-text">
+            <i class="fas fa-laptop-code"></i>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Node.js,Bootstrap</p>
+        </div>
+    </section>
+    
+
+    <div class="divider"></div>
+
+    <section id="education" class="my-5">
+        <h2 class="text-center slide-in">Education</h2>
+        <div class="card">
+            <h3>Kroot Memorial School</h3>
+            <p>ICSE | 2009-2019 | 89%</p>
+            <button onclick="location.href='school.html'">View Details</button>
+        </div>
+        <div class="card">
+            <h3>KPU College</h3>
+            <p>PUC | 2019-2021 | 96%</p>
+            <button onclick="location.href='pu.html'">View Details</button>
+        </div>
+        <div class="card">
+            <h3>Visvesvaraya Technological University</h3>
+            <p>CGPA: 8.9 | 2021-2025</p>
+            <button onclick="location.href='degree.html'">View Details</button>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="projects" class="my-5">
+        <h2 class="text-center slide-in">Projects</h2>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio to showcase my projects and skills, built using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="card">
+            <h3>E-commerce Website</h3>
+            <p>An online store named Stay Nest. (Ongoing project)</p>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="currently-studying" class="text-center my-5">
+        <h2 class="slide-in">Currently Studying</h2>
+        <p>I am currently pursuing a degree in Information Science and Engineering at Visvesvaraya Technological University, focusing on web development, data structures, and algorithms.</p>
+        <p>In addition, I will explore the following topics in the near future:</p>
+        <ul class="fade-in">
+            <li>Node.JS</li>
+            <li>Express JS</li>
+            <li>React</li>
+            <li>MongoDB</li>
+        </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact" class="text-center my-5">
+        <h2 class="slide-in">Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media!</p>
+        <div class="icon-text">
+            <i class="fas fa-envelope"></i>
+            <p><strong>Email:</strong> dhruthimkashyap@gmail.com</p>
+        </div>
+        <div class="icon-text">
+            <i class="fas fa-phone"></i>
+            <p><strong>Phone:</strong> +91-99--------</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/Dhruthi-Kashyap" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/dhruthi-m-kashyap-4983ab266" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 Dhruthi M Kashyap. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
